@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/img/faces.png">
+
+    <title>A Fast Method for Estimating Transient Scene Attributes</title>
+
+    <STYLE type=text/css media=all>
+      #mainmedia {
+        MARGIN-LEFT: auto; ;
+        WIDTH: expression(document.body.clientWidth > 895? "895px": "auto" );
+        MARGIN-RIGHT: auto;
+        TEXT-ALIGN: left;
+        max-width: 895px
+      }
+      h2
+      {
+         text-align: center
+      }
+    </STYLE>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div id=mainmedia class="jumbotron">
+      <div class="container">
+        <h2>A Fast Method for Estimating Transient Scene Attributes</h2>
+        <img src="img/daylight_sum.png" alt="Transient" width="100%">
+        <h3>Abstract:</h3>
+
+	We propose the use of deep convolutional neural networks to estimate the
+	transient attributes of a scene from a single image. Transient scene
+	attributes describe both the objective conditions, such as the weather, time of
+	day, and the season, and subjective properties of a scene, such as whether or
+	not the scene seems busy. Recently, convolutional neural networks have been
+	used to achieve state-of-the-art results for many vision problems, from object
+	detection to scene classification, but have not previously been used for
+	estimating transient attributes. We compare several methods for adapting an
+	existing network architecture and present state-of-the-art results on two
+	benchmark datasets. Our method is more accurate and significantly faster than
+	previous methods, enabling real-world applications. 
+
+    <h3>People:</h3>
+
+    <div class="row">
+    <div class="col-md-5">
+    University of Kentucky
+    <ul id=people>
+        <li><a href="http://baltenberger.com">Ryan Baltenberger</a>
+        <li><a href="http://cs.uky.edu/~ted/">Menghua Zhai</a>
+        <li><a href="http://connorgreenwell.com">Connor Greenwell</a>
+        <li><a href="http://cs.uky.edu/~scott/">Scott Workman</a>
+        <li><a href="http://cs.uky.edu/~jacobs/">Nathan Jacobs</a>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+
+<!--  <h3>Highlights:</h3>
+
+        <ul id="highlights">
+          <li><img src="img/dataset.png" alt="Dataset Map" style="float:right" height="30%" width="35%">
+              <h4><b>Geolocated Faces</b></h4>
+              We constructed a large database of geolocated face
+              patches. The map depicts the geolocation of raw patches
+              (red) and a filtered set of frontal face patches (green). These
+              images serve as a foundation for our analysis of the geo-
+              dependence of human face appearance.<br><br><br><br><br>
+
+        </ul>
+-->
+    <h3><a name="papers"></a>Related Papers</h3>
+  <ul>
+
+  <li>
+   <a href="docs/Baltenberger_Transient-Attributes_WACV16.pdf">A Fast Method for Estimating Transient Scene Attributes</a>
+   (Ryan Baltenberger, Menghua Zhai, Connor Greenwell, Scott Workman, Nathan Jacobs),
+    In IEEE Winter Conference on Applications of Computer Vision (WACV), 2016.
+
+   <div>
+          Bibtex Entry:
+	  <pre>
+@article{baltenberger16transient,
+  title = {{A Fast Method for Estimating Transient Scene Attributes}}, 
+  author = {Baltenberger, Ryan and Zhai, Menghua and Greenwell, Connor and Workman, Scott and Jacobs, Nathan}, 
+  journal = {{IEEE Winter Conference on Applications of Computer Vision (WACV)}}, 
+  year = {2016}, 
+  volume = {2016}, 
+  number = {1}, 
+  pages = {8}
+}
+          </pre>
+          </div>
+          </li>
+      </ul>
+
+      <h3><a name="models"></a>Models:</h3>
+	   These are the Caffe model files for both TransientNet and CloudyNet.  Each zip file 
+	   contains the network's deploy and solver files used for training and the learned
+	   weights.
+	   <br>
+	   <a href="https://github.com/UkyVision/deeptransient/">Github Repository</a><br>
+	   <a href="https://drive.google.com/open?id=0BzEcTtT1A2ILcl94SlVRUVlFM28">TransientNet Models</a><br>
+	   <a href="https://drive.google.com/open?id=0BzEcTtT1A2ILVHI4NnJuUzF4QTg">CloudyNet Models</a>
+      </div>
+
+      <footer>
+      </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
